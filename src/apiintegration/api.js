@@ -1,7 +1,10 @@
+const BackendUrl = `https://chess-backend.onrender.com`;
+// http://localhost:5000
+
 export const fetchPlayerProfile = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_profile?userName=${userName}`
+      `${BackendUrl}/api/player_profile?userName=${userName}`
     );
 
     const data = await response.json();
@@ -16,7 +19,7 @@ export const fetchPlayerProfile = async (userName) => {
 export const fetchPlayerStats = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_stats?userName=${userName}`
+      `${BackendUrl}/api/player_stats?userName=${userName}`
     );
 
     const data = await response.json();
@@ -31,7 +34,7 @@ export const fetchPlayerStats = async (userName) => {
 export const fetchPlayerGames = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_games?userName=${userName}`
+      `${BackendUrl}/api/player_games?userName=${userName}`
     );
 
     const data = await response.json();
@@ -46,7 +49,7 @@ export const fetchPlayerGames = async (userName) => {
 export const fetchPlayerGamesToMoves = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_games_to_moves?userName=${userName}`
+      `${BackendUrl}/api/player_games_to_moves?userName=${userName}`
     );
 
     const data = await response.json();
@@ -61,7 +64,7 @@ export const fetchPlayerGamesToMoves = async (userName) => {
 export const fetchPlayerGamesArchives = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_games_to_archives?userName=${userName}`
+      `${BackendUrl}/api/player_games_to_archives?userName=${userName}`
     );
 
     const data = await response.json();
@@ -76,7 +79,7 @@ export const fetchPlayerGamesArchives = async (userName) => {
 export const fetchPlayerGamesMonthlyArchives = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_games_monthly_archives?userName=${userName}`
+      `${BackendUrl}/api/player_games_monthly_archives?userName=${userName}`
     );
 
     const data = await response.json();
@@ -91,7 +94,7 @@ export const fetchPlayerGamesMonthlyArchives = async (userName) => {
 export const fetchPlayerGamesArchivesPGN = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_games_monthly_archives_pgn?userName=${userName}`
+      `${BackendUrl}/api/player_games_monthly_archives_pgn?userName=${userName}`
     );
 
     const data = await response.json();
@@ -106,7 +109,7 @@ export const fetchPlayerGamesArchivesPGN = async (userName) => {
 export const fetchPlayerClubs = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_clubs?userName=${userName}`
+      `${BackendUrl}/api/player_clubs?userName=${userName}`
     );
 
     const data = await response.json();
@@ -121,7 +124,7 @@ export const fetchPlayerClubs = async (userName) => {
 export const fetchPlayerTournaments = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/player_tournaments?userName=${userName}`
+      `${BackendUrl}/api/player_tournaments?userName=${userName}`
     );
 
     const data = await response.json();
@@ -136,7 +139,7 @@ export const fetchPlayerTournaments = async (userName) => {
 export const fetchTitledPlayers = async (userName) => {
   try {
     const response = await fetch(
-      `http://localhost:5000/api/titled_players?userName=${userName}`
+      `${BackendUrl}/api/titled_players?userName=${userName}`
     );
 
     const data = await response.json();
