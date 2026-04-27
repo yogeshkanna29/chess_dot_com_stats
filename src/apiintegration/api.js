@@ -1,5 +1,5 @@
 const BackendUrl = `https://chess-backend.onrender.com`;
-// http://localhost:5000
+// const BackendUrl =`http://localhost:5000`;
 
 export const fetchPlayerProfile = async (userName) => {
   try {
