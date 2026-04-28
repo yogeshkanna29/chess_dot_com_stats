@@ -10,7 +10,7 @@ export default function NameForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name.trim() === "") {
-      alert("Please enter your name");
+      alert("Please enter your username");
       return;
     }
     setSubmittedName(name);
@@ -42,7 +42,7 @@ export default function NameForm() {
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Enter your name"
+            placeholder="Enter your username"
             value={name}
             onChange={(e) => setName(e.target.value)}
             style={{
